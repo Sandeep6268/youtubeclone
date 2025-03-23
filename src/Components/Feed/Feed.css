@@ -1,0 +1,85 @@
+.feed-cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+}
+.feed-cards .card{
+    width: 24%;
+}
+.feed-cards .card img{
+    width: 100%;
+    border-radius: 5px;
+}
+.feed-img{
+    position: relative;
+}
+.duratio{
+    position: absolute;
+    bottom: 10px;
+    right: 5px;
+    padding: 1px 4px;
+    border-radius: 4px;
+    background: rgba(89, 89, 89,.5);
+    color: white;
+}
+.feed-cards .card h2{
+    font-size: 16px;
+    font-weight: 600;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif  ;
+}
+.feed-cards .card p{
+    font-size: 14px;
+}
+.feed-cards .card h5{
+    color: rgb(64, 64, 64);
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+
+@media (max-width:900px) {
+    .feed-cards .card{
+        width: 32%;
+    }
+    .feed-cards .card h2{
+        font-size: 14px;
+    }
+    .feed-cards .card h5{
+        font-size: 12px;
+    }
+    .feed-cards .card p {
+        font-size: 12px;
+    }
+}
+@media (max-width:668px) {
+    .feed-cards .card{
+        width: 49%;
+    }
+}
+@media (max-width:520px) {
+    .feed-cards{
+        padding: 0;
+    }
+    .feed-cards .card{
+        width: 100%;
+    }
+    .feed-cards .card .feed-video-info{
+        padding-inline: 10px;
+        padding-bottom: 20px;
+    }
+    .feed-cards .card img{
+        border-radius: 0;
+    }
+    .feed-cards .card h2{
+        font-size: 16px;
+    }
+    .feed-cards .card h5{
+        font-size: 14px;
+    }
+    .feed-cards .card p {
+        font-size: 14px;
+    }
+
+}

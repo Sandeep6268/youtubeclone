@@ -1,0 +1,105 @@
+.flex{
+    display: flex;
+    align-items: center;
+}
+nav{
+    justify-content: space-between;
+    padding-inline: 20px;
+    padding-block: 10px;
+    box-shadow: 0px 3px 5px rgb(132, 132, 132);
+}
+nav img{
+    width: 100%;
+}
+nav .menu-icon-logo{
+    gap: 20px;
+    cursor: pointer;
+}
+nav .menu-icon-logo .menu-icon{
+    width: 25px;
+}
+nav .menu-icon-logo .logo{
+    width: 150px;
+    
+}
+nav .search-bar{
+    border: 1px solid rgb(132, 132, 132);
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    border-radius: 20px;
+    padding-inline: 20px;
+    padding-block: 5px;
+}
+nav input{
+    border: none;
+}
+nav input:focus-visible{
+    outline: none;
+}
+nav .search-bar .search-icon{
+    width: 20px;
+    cursor: pointer;
+}
+nav .icons-profile{
+    gap: 10px;
+}
+nav .icons-profile .upload-icon,.more-icon,.notification-icon,.profile-icon{
+    width: 30px;
+    cursor: pointer;
+}
+nav .profile-icon img{
+    border-radius: 50%;
+}
+.inp-field{
+    position: relative;
+}
+
+@media (max-width:900px) {
+    nav .menu-icon-logo .menu-icon{
+        width: 20px;
+    }
+    nav .menu-icon-logo .logo{
+        width: 100px;
+    }
+    nav .search-bar{
+        width: 200px;
+        height: 100%;
+    }
+    nav .icons-profile .upload-icon,.more-icon,.notification-icon,.profile-icon{
+        width: 25px;
+    }
+    nav .search-bar input{
+        height: 100% !important;
+        width: 100% !important;
+    }
+    nav .search-bar img{
+        width: 15px;
+    }
+    nav .search-bar .search-icon{
+        /* width: 100%; */
+    }
+    
+}
+@media (max-width:668px) {
+    nav .menu-icon-logo .menu-icon{
+        display: none;
+    }
+    nav .search-bar{
+        /* display: none; */
+        width: 100px;
+        height: 15px;
+    }
+    nav .menu-icon-logo .logo{
+        width: 80px;
+    }
+    nav .icons-profile .upload-icon,.more-icon,.notification-icon{
+        display: none;
+    }
+    nav .search-bar .search-icon{
+        width: 12px;
+    }
+    nav .search-bar .search-icon img{
+        width: 12px;
+    }
+}

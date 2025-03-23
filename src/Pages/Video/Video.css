@@ -1,0 +1,10 @@
+.play-video-page{
+    display: flex;
+    gap: 1%;
+    padding: 20px;
+}
+@media (max-width:900px) {
+    .play-video-page{
+        flex-direction: column;
+    }
+}
